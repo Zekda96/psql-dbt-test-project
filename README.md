@@ -2,7 +2,10 @@
 
 
 ## Setup
-1. Open a terminal on the project directory.
+1. Open a terminal on the project directory and install project requirements.
+```
+pip install -r requirements.txt
+```
 
 2. Build and run docker container with PostgreSQL database:
 ```
