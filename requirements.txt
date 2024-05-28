@@ -1,0 +1,5 @@
+dbt-core==1.8.0
+dbt-postgres==1.8.1
+SQLAlchemy==2.0.30
+psycopg2==2.9.9
+faker-clickstream==0.1.1
