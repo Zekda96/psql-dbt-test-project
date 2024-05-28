@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    container_name: posgtres-container
+    environment:
+      POSTGRES_DB: clickstream
+      POSTGRES_USER: clickstream
+      POSTGRES_PASSWORD: clickstream
+    ports:
+      - "8080:5432"
+    volumes:
+      - ./postgres-init:/docker-entrypoint-initdb.d/
+      # - pgdata:/var/lib/postgresql/data 
+ 
+# volumes:
+#   pgdata:
